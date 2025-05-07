@@ -5,11 +5,10 @@ const { authorValidation } = require("../validation/author.validation");
 const addAuthor = async (req, res) => {
   try {
     const { error, value } = authorValidation(req.body);
-
     if (error) {
       return sendErrorResponse(res, error);
     }
-    //create
+
     const newAuthor = await Author.create(value);
     res.status(201).send({ message: "New Author added", newAuthor });
   } catch (error) {
@@ -26,47 +25,47 @@ const getAllAuthors = async (req, res) => {
   }
 };
 
-const getCategoryByName = async (req, res) => {
-  const { name } = req.body;
+const getOneAuthor = async (req, res) => {
+  const { id } = req.params;
   try {
-    const findName = await Category.find({ name });
-    res.status(200).send({ findName });
+    const author = await Author.findById(id);
+    res.status(200).send({ author });
   } catch (error) {
     sendErrorResponse(res, error);
   }
 };
 
-const getOneCategory = async (req, res) => {
+const updateAuthor = async (req, res) => {
   const { id } = req.params;
   try {
-    const category = await Category.findById(id);
-    res.status(200).send({ category });
+    const { error, value } = authorValidation(req.body);
+    if (error) {
+      return sendErrorResponse(res, error);
+    }
+
+    const updatedAuthor = await Author.findByIdAndUpdate(id, value, {
+      new: true,
+    });
+    res.status(200).send({ message: "Updated Author", updatedAuthor });
   } catch (error) {
     sendErrorResponse(res, error);
   }
 };
 
-const updateCategory = async (req, res) => {
+const deleteAuthor = async (req, res) => {
   const { id } = req.params;
-  const data = req.body;
   try {
-    const updateCategory = await Category.findByIdAndUpdate(id, data);
-    res.status(200).send({ message: "Updated Category", updateCategory });
+    await Author.findByIdAndDelete(id);
+    res.status(200).send({ message: "Deleted Author" });
   } catch (error) {
     sendErrorResponse(res, error);
   }
 };
 
-const deleteCategory = async (req, res) => {
-  const { id } = req.params;
-  try {
-    await Category.findByIdAndDelete(id);
-    res.status(200).send({ message: "Deleted Category" });
-  } catch (error) {
-    sendErrorResponse(res, error);
-  }
-};
 module.exports = {
   addAuthor,
   getAllAuthors,
+  getOneAuthor,
+  updateAuthor,
+  deleteAuthor,
 };
