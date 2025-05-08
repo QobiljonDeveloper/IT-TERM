@@ -1,15 +1,19 @@
 const { sendErrorResponse } = require("../helpers/send_error_response");
 const Author = require("../schemas/Author");
 const { authorValidation } = require("../validation/author.validation");
-
+const bcrypt = require("bcrypt");
 const addAuthor = async (req, res) => {
   try {
     const { error, value } = authorValidation(req.body);
     if (error) {
       return sendErrorResponse(res, error);
     }
+    const hashedPassword = bcrypt.hashSync(value.password, 7);
 
-    const newAuthor = await Author.create(value);
+    const newAuthor = await Author.create({
+      ...value,
+      password: hashedPassword,
+    });
     res.status(201).send({ message: "New Author added", newAuthor });
   } catch (error) {
     sendErrorResponse(res, error);
