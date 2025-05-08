@@ -66,10 +66,28 @@ const deleteAuthor = async (req, res) => {
   }
 };
 
+const loginAuthor = async (req, res) => {
+  try {
+    const { email, password } = req.body;
+    const author = await Author.findOne({ email });
+    if (!author) {
+      return res.status(401).send({ message: "Email yoki password noto'g'ri" });
+    }
+    const validPassword = bcrypt.compareSync(password, author.password);
+    if (!validPassword) {
+      return res.status(401).send({ message: "Email yoki password noto'g'ri" });
+    }
+    res.status(201).send({ message: "Tizimga kirdingiz", id: author.id });
+  } catch (error) {
+    sendErrorResponse(res, error);
+  }
+};
+
 module.exports = {
   addAuthor,
   getAllAuthors,
   getOneAuthor,
   updateAuthor,
   deleteAuthor,
+  loginAuthor,
 };
