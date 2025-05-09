@@ -8,6 +8,8 @@ const synonimRouter = require("./synonim.routes");
 const topicRouter = require("./topic.routes");
 const descTopicRouter = require("./desTopic.routes");
 const tagRouter = require("./tag.routes");
+const userRouter = require("./user.routes");
+const adminRouter = require("./admin.routes");
 
 router.use("/dict", dictRouter);
 router.use("/category", categoryRouter);
@@ -18,5 +20,7 @@ router.use("/social", socialRouter);
 router.use("/topic", topicRouter);
 router.use("/desc-topic", descTopicRouter);
 router.use("/tag", tagRouter);
+router.use("/user", userRouter);
+router.use("/admin", adminRouter);
 
 module.exports = router;

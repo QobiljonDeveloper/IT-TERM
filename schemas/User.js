@@ -1,7 +1,6 @@
-const { required } = require("joi");
 const { Schema, model } = require("mongoose");
 
-const socialSchema = new Schema(
+const userSchema = new Schema(
   {
     user_name: {
       type: String,
@@ -12,7 +11,6 @@ const socialSchema = new Schema(
       type: String,
       trim: true,
       required: true,
-      lower,
     },
     password: {
       type: String,
@@ -29,4 +27,4 @@ const socialSchema = new Schema(
   { versionKey: false, timestamps: false }
 );
 
-module.exports = model("Social", socialSchema);
+module.exports = model("User", userSchema);

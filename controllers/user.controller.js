@@ -2,15 +2,19 @@ const User = require("../schemas/User");
 const { userValidation } = require("../validation/user.validation");
 const { sendErrorResponse } = require("../helpers/send_error_response");
 
-  const addUser = async (req, res) => {
-    try {
-      const { error, value } = userValidation(req.body);
-      if (error) return sendErrorResponse(res, error);
+const bcrypt = require("bcrypt");
 
-      const newUser = await User.create(value);
-      res.status(201).send({ message: "New user added", newUser });
-    } catch (error) {
-      sendErrorResponse(res, error);
+const addUser = async (req, res) => {
+  try {
+    const { error, value } = userValidation(req.body);
+    if (error) return sendErrorResponse(res, error);
+
+    value.password = await bcrypt.hash(value.password, 10);
+
+    const newUser = await User.create(value);
+    res.status(201).send({ message: "New user added", newUser });
+  } catch (error) {
+    sendErrorResponse(res, error);
   }
 };
 
@@ -58,10 +62,26 @@ const deleteUser = async (req, res) => {
   }
 };
 
+const loginUser = async (req, res) => {
+  const { email, password } = req.body;
+  try {
+    const user = await User.findOne({ email });
+    if (!user) return res.status(404).send({ message: "User not found" });
+
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) return res.status(400).send({ message: "Invalid password" });
+
+    res.status(200).send({ message: "Logged in successfully", user });
+  } catch (error) {
+    sendErrorResponse(res, error);
+  }
+};
+
 module.exports = {
   addUser,
   getAllUsers,
   getOneUser,
   updateUser,
   deleteUser,
+  loginUser,
 };
