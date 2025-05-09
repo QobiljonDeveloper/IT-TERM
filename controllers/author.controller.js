@@ -1,9 +1,9 @@
 const { sendErrorResponse } = require("../helpers/send_error_response");
 const Author = require("../schemas/Author");
 const { authorValidation } = require("../validation/author.validation");
-const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const config = require("config");
+const bcrypt = require("bcrypt");
 
 const addAuthor = async (req, res) => {
   try {
@@ -25,6 +25,7 @@ const addAuthor = async (req, res) => {
 
 const getAllAuthors = async (req, res) => {
   try {
+
     const authors = await Author.find();
     res.status(200).send({ authors });
   } catch (error) {
