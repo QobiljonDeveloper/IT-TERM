@@ -2,6 +2,8 @@ const Admin = require("../schemas/Admin");
 const { adminValidation } = require("../validation/admin-validation");
 const { sendErrorResponse } = require("../helpers/send_error_response");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const config = require("config");
 
 const addAdmin = async (req, res) => {
   try {
@@ -63,19 +65,39 @@ const deleteAdmin = async (req, res) => {
 
 const loginAdmin = async (req, res) => {
   const { admin_email, admin_password } = req.body;
+
   try {
     const admin = await Admin.findOne({ admin_email });
-    if (!admin) return res.status(404).send({ message: "Admin not found" });
+
+    if (!admin) {
+      return res.status(404).send({ message: "Admin topilmadi" });
+    }
 
     const isMatch = await bcrypt.compare(admin_password, admin.admin_password);
-    if (!isMatch) return res.status(400).send({ message: "Invalid password" });
+    if (!isMatch) {
+      return res.status(400).send({ message: "Parol noto'g'ri" });
+    }
 
-    res.status(200).send({ message: "Admin logged in successfully", admin });
+    const payload = {
+      id: admin._id,
+      email: admin.admin_email,
+      admin_is_creator: admin.admin_is_creator,
+      admin_is_active: admin.admin_is_active,
+    };
+
+    const token = jwt.sign(payload, config.get("tokenAdminKey"), {
+      expiresIn: config.get("tokenExpTime"),
+    });
+
+    res.status(200).send({
+      message: "Admin muvaffaqiyatli tizimga kirdi",
+      id: admin._id,
+      token,
+    });
   } catch (error) {
     sendErrorResponse(res, error);
   }
 };
-
 module.exports = {
   addAdmin,
   getAllAdmins,

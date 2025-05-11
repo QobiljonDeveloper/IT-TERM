@@ -23,6 +23,7 @@ const userSchema = new Schema(
       type: String,
       trim: true,
     },
+    is_active: { type: Boolean, default: true },
   },
   { versionKey: false, timestamps: false }
 );

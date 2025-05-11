@@ -9,11 +9,13 @@ const {
   deleteUser,
   loginUser,
 } = require("../controllers/user.controller");
+const userJwtGuard = require("../middlewares/guards/user-jwt.guard");
+const userSelfGuard = require("../middlewares/guards/user-self.guard");
 
 router.post("/", addUser);
-router.get("/", getAllUsers);
+router.get("/", userJwtGuard, getAllUsers);
 router.post("/login", loginUser);
-router.get("/:id", getOneUser);
+router.get("/:id", userJwtGuard, userSelfGuard, getOneUser);
 router.put("/:id", updateUser);
 router.delete("/:id", deleteUser);
 

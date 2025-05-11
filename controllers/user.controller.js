@@ -1,7 +1,8 @@
 const User = require("../schemas/User");
 const { userValidation } = require("../validation/user.validation");
 const { sendErrorResponse } = require("../helpers/send_error_response");
-
+const jwt = require("jsonwebtoken");
+const config = require("config");
 const bcrypt = require("bcrypt");
 
 const addUser = async (req, res) => {
@@ -71,7 +72,18 @@ const loginUser = async (req, res) => {
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) return res.status(400).send({ message: "Invalid password" });
 
-    res.status(200).send({ message: "Logged in successfully", user });
+    const payload = {
+      id: user._id,
+      email: user.email,
+      is_active: user.is_active,
+    };
+
+    token = jwt.sign(payload, config.get("tokenUserKey"), {
+      expiresIn: config.get("tokenExpTime"),
+    });
+    res
+      .status(200)
+      .send({ message: "Logged in successfully", id: user._id, token });
   } catch (error) {
     sendErrorResponse(res, error);
   }

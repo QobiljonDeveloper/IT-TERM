@@ -25,7 +25,6 @@ const addAuthor = async (req, res) => {
 
 const getAllAuthors = async (req, res) => {
   try {
-
     const authors = await Author.find();
     res.status(200).send({ authors });
   } catch (error) {
