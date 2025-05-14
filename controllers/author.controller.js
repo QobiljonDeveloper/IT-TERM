@@ -4,6 +4,7 @@ const { authorValidation } = require("../validation/author.validation");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const bcrypt = require("bcrypt");
+const cookieParser = require("cookie-parser");
 const jwtService = require("../services/jwt.service");
 
 const addAuthor = async (req, res) => {
@@ -92,14 +93,58 @@ const loginAuthor = async (req, res) => {
     };
 
     // const token = jwt.sign(payload, config.get("tokenKey"), {
-    //   expiresIn: config.get("tokenExpTime"),    
+    //   expiresIn: config.get("tokenExpTime"),
     // });
 
     const tokens = jwtService.generateTokens(payload);
+    author.refresh_token = tokens.refreshToken;
+    await author.save();
 
-    res
-      .status(201)
-      .send({ message: "Tizimga kirdingiz", id: author.id, tokens });
+    res.cookie("refreshToken", tokens.refreshToken, {
+      httpOnly: true,
+      maxAge: config.get("cookie_refresh_time"),
+    });
+
+    res.status(201).send({
+      message: "Tizimga kirdingiz",
+      id: author.id,
+      accessToken: tokens.accessToken,
+    });
+  } catch (error) {
+    sendErrorResponse(res, error);
+  }
+};
+
+const logoutAuthor = async (req, res) => {
+  try {
+    console.log(req.cookies);
+    console.log(req.headers.cookie);
+    const { refreshToken } = req.cookies;
+
+    if (!refreshToken) {
+      return res
+        .status(400)
+        .send({ message: "Cookieda refresh token topilmadi" });
+    }
+
+    const author = await Author.findOneAndUpdate(
+      {
+        refresh_token: refreshToken,
+      },
+      {
+        refresh_token: "",
+      },
+      {
+        new: true,
+      }
+    );
+
+    if (!author) {
+      return res.status(400).send({ message: "Token noto'g'ri" });
+    }
+
+    res.clearCookie("refreshToken");
+    res.send({ author });
   } catch (error) {
     sendErrorResponse(res, error);
   }
@@ -112,4 +157,5 @@ module.exports = {
   updateAuthor,
   deleteAuthor,
   loginAuthor,
+  logoutAuthor,
 };
