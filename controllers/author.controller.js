@@ -4,6 +4,7 @@ const { authorValidation } = require("../validation/author.validation");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const bcrypt = require("bcrypt");
+const jwtService = require("../services/jwt.service");
 
 const addAuthor = async (req, res) => {
   try {
@@ -90,13 +91,15 @@ const loginAuthor = async (req, res) => {
       is_expert: author.is_expert,
     };
 
-    const token = jwt.sign(payload, config.get("tokenKey"), {
-      expiresIn: config.get("tokenExpTime"),
-    });
+    // const token = jwt.sign(payload, config.get("tokenKey"), {
+    //   expiresIn: config.get("tokenExpTime"),    
+    // });
+
+    const tokens = jwtService.generateTokens(payload);
 
     res
       .status(201)
-      .send({ message: "Tizimga kirdingiz", id: author.id, token });
+      .send({ message: "Tizimga kirdingiz", id: author.id, tokens });
   } catch (error) {
     sendErrorResponse(res, error);
   }
