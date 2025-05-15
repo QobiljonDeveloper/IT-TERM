@@ -27,6 +27,6 @@ module.exports = (req, res, next) => {
     req.admin = decodedPayload;
     next();
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error,res);
   }
 };

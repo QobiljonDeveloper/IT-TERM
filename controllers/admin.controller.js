@@ -137,6 +137,49 @@ const logoutAdmin = async (req, res) => {
   }
 };
 
+const refreshAdminToken = async (req, res) => {
+  try {
+    const { admin_refresh_key } = req.cookies;
+    if (!admin_refresh_key) {
+      return res
+        .status(400)
+        .send({ message: "Cookieda refresh token topilmadi" });
+    }
+
+    await adminJwtService.verifyRefreshToken(admin_refresh_key);
+
+    const admin = await Admin.findOne({ refresh_token: admin_refresh_key });
+
+    if (!admin) {
+      return res
+        .status(401)
+        .send({ message: "Bazada refresh token topilmadi" });
+    }
+    const payload = {
+      id: admin._id,
+      email: admin.admin_email,
+      admin_is_creator: admin.admin_is_creator,
+      admin_is_active: admin.admin_is_active,
+    };
+
+    const tokens = adminJwtService.generateTokens(payload);
+    admin.refresh_token = tokens.refreshToken;
+    await admin.save();
+
+    res.cookie("admin_refresh_key", tokens.refreshToken, {
+      httpOnly: true,
+      maxAge: config.get("cookie_refresh_time"),
+    });
+    res.status(201).send({
+      message: "Token Yangilandi",
+      id: admin.id,
+      accessToken: tokens.accessToken,
+    });
+  } catch (error) {
+    sendErrorResponse(error, res);
+  }
+};
+
 module.exports = {
   addAdmin,
   getAllAdmins,
@@ -145,4 +188,5 @@ module.exports = {
   deleteAdmin,
   loginAdmin,
   logoutAdmin,
+  refreshAdminToken,
 };

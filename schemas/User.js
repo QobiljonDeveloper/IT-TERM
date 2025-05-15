@@ -6,6 +6,7 @@ const userSchema = new Schema(
       type: String,
       trim: true,
       required: true,
+      unique: true,
     },
     email: {
       type: String,
@@ -25,6 +26,7 @@ const userSchema = new Schema(
     },
     is_active: { type: Boolean, default: true },
     refresh_token: { type: String },
+    activation_link: { type: String },
   },
   { versionKey: false, timestamps: false }
 );

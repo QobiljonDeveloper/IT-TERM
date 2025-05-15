@@ -4,6 +4,9 @@ const { sendErrorResponse } = require("../helpers/send_error_response");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const bcrypt = require("bcrypt");
+const uuid = require("uuid");
+const mailService = require("../services/mail.service");
+
 const { userJwtService } = require("../services/jwt.service");
 
 const addUser = async (req, res) => {
@@ -11,9 +14,20 @@ const addUser = async (req, res) => {
     const { error, value } = userValidation(req.body);
     if (error) return sendErrorResponse(error, res);
 
-    value.password = await bcrypt.hash(value.password, 10);
+    const hashedPassword = bcrypt.hashSync(value.password, 10);
 
-    const newUser = await User.create(value);
+    const activation_link = uuid.v4();
+
+    const newUser = await User.create({
+      ...value,
+      password: hashedPassword,
+      activation_link,
+    });
+
+    const link = `${config.get(
+      "api_url"
+    )}/api/user/activate/${activation_link}`;
+    await mailService.sendMail(value.email, link);
     res.status(201).send({ message: "New user added", newUser });
   } catch (error) {
     sendErrorResponse(error, res);
@@ -129,6 +143,63 @@ const logoutUser = async (req, res) => {
   }
 };
 
+const refreshUserToken = async (req, res) => {
+  try {
+    const { user_refresh_key } = req.cookies;
+
+    if (!user_refresh_key) {
+      return res
+        .status(400)
+        .send({ message: "Cookieda refresh token topilmadi" });
+    }
+    const user = await User.findOne({ refresh_token: user_refresh_key });
+
+    const payload = {
+      id: user._id,
+      email: user.email,
+      is_active: user.is_active,
+    };
+
+    const tokens = userJwtService.generateTokens(payload);
+    user.refresh_token = tokens.refreshToken;
+    await user.save();
+    res.cookie("user_refresh_key", tokens.refreshToken, {
+      httpOnly: true,
+      maxAge: config.get("cookie_refresh_time"),
+    });
+    res.status(200).send({
+      message: "Logged in successfully",
+      id: user._id,
+      access_token: tokens.accessToken,
+    });
+  } catch (error) {
+    sendErrorResponse(error, res);
+  }
+};
+const userActivate = async (req, res) => {
+  try {
+    const { link } = req.params;
+    const user = await User.findOne({ activation_link: link });
+
+    if (!user) {
+      return res.status(400).send({ message: "User link noto'g'ri" });
+    }
+
+    if (user.is_active) {
+      return res
+        .status(400)
+        .send({ message: "User allaqachon faollashtirilgan" });
+    }
+
+    user.is_active = true;
+    await user.save();
+
+    res.send({ message: "User faollashtirildi", isActive: user.is_active });
+  } catch (error) {
+    sendErrorResponse(error, res);
+  }
+};
+
 module.exports = {
   addUser,
   getAllUsers,
@@ -137,4 +208,6 @@ module.exports = {
   deleteUser,
   loginUser,
   logoutUser,
+  refreshUserToken,
+  userActivate,
 };

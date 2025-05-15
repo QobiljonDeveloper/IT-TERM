@@ -7,6 +7,8 @@ const bcrypt = require("bcrypt");
 const cookieParser = require("cookie-parser");
 const jwtService = require("../services/jwt.service");
 const { authorJwtService } = require("../services/jwt.service");
+const uuid = require("uuid");
+const mailService = require("../services/mail.service");
 
 const addAuthor = async (req, res) => {
   try {
@@ -15,11 +17,18 @@ const addAuthor = async (req, res) => {
       return sendErrorResponse(error, res);
     }
     const hashedPassword = bcrypt.hashSync(value.password, 7);
+    const activation_link = uuid.v4();
 
     const newAuthor = await Author.create({
       ...value,
       password: hashedPassword,
+      activation_link,
+      activation_link,
     });
+    const link = `${config.get(
+      "api_url"
+    )}/api/author/activate/${activation_link}`;
+    await mailService.sendMail(value.email, link);
     res.status(201).send({ message: "New Author added", newAuthor });
   } catch (error) {
     sendErrorResponse(error, res);
@@ -210,6 +219,28 @@ const refreshAuthorToken = async (req, res) => {
   }
 };
 
+const authorActivate = async (req, res) => {
+  try {
+    const { link } = req.params;
+    const author = await Author.findOne({ activation_link: link });
+
+    if (!author) {
+      return res.status(400).send({ message: "Avtor link noto'g'ri" });
+    }
+
+    if (author.is_active) {
+      return res.status(400).send({ message: "Avtor avvlar faollashtirilgan" });
+    }
+
+    author.is_active = true;
+    await author.save();
+
+    res.send({ message: "Avtor faollashtirildi", isActive: author.is_active });
+  } catch (error) {
+    sendErrorResponse(error, res);
+  }
+};
+
 module.exports = {
   addAuthor,
   getAllAuthors,
@@ -219,4 +250,5 @@ module.exports = {
   loginAuthor,
   logoutAuthor,
   refreshAuthorToken,
+  authorActivate,
 };

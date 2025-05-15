@@ -1,6 +1,6 @@
 {
   "port": 3333,
-"dbUri": "mongodb://localhost:27017/itterm",
+  "dbUri": "mongodb://localhost:27017/itterm",
   "tokenKey": "MySecretTokenKey",
   "tokenExpTime": "24h",
 
@@ -8,17 +8,22 @@
   "refresh_key": "RefreshTokenSecretKey",
   "access_time": "15h",
   "refresh_time": "15d",
-  
+
   "admin_access_key": "AdminAccessSecret",
   "admin_refresh_key": "AdminRefreshSecret",
   "admin_access_time": "5h",
   "admin_refresh_time": "10d",
-  
+
   "user_access_key": "UserAccessSecret",
   "user_refresh_key": "UserRefreshSecret",
   "user_access_time": "20h",
   "user_refresh_time": "7d",
 
+  "cookie_refresh_time": 1296000000,
 
-  "cookie_refresh_time": 1296000000
+  "smtp_password": "ulzcnmzfchqchlev",
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "smtp_user": "qobiljonyuldashev044@gmail.com",
+  "api_url": "http://localhost:3333"
 }

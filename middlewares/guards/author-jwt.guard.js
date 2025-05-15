@@ -1,7 +1,5 @@
 const { sendErrorResponse } = require("../../helpers/send_error_response");
-const jwt = require("jsonwebtoken");
-const config = require("config");
-const jwtService = require("../../services/jwt.service");
+const { authorJwtService } = require("../../services/jwt.service");
 
 module.exports = async (req, res, next) => {
   try {
@@ -19,8 +17,7 @@ module.exports = async (req, res, next) => {
       return res.status(401).send({ message: "Noto‘g‘ri token format" });
     }
 
-    // const decodedPayload = jwt.verify(token, config.get("tokenKey"));
-    const decodedPayload = await jwtService.verifyAccessToken(token);
+    const decodedPayload = await authorJwtService.verifyAccessToken(token);
 
     if (!decodedPayload.is_active) {
       return res.status(403).send({ message: "Aktiv bo'lmagan foydalanuvchi" });
@@ -29,6 +26,6 @@ module.exports = async (req, res, next) => {
     req.author = decodedPayload;
     next();
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };

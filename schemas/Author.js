@@ -44,7 +44,8 @@ const authorSchema = new Schema(
     is_active: {
       type: Boolean,
     },
-    refresh_token: String,
+    refresh_token: { type: String },
+    activation_link: { type: String },
   },
   { versionKey: false, timestamps: false }
 );
