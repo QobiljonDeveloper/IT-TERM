@@ -7,13 +7,13 @@ const addDict = async (req, res) => {
     const { error, value } = dictValidation(req.body);
 
     if (error) {
-      return sendErrorResponse(res, error);
+      return sendErrorResponse(error, res);
     }
     const { term } = value;
     const newDict = await Dict.create({ term, letter: term[0] });
     res.status(201).send({ message: "New Term added", newDict });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -22,7 +22,7 @@ const getAllDict = async (req, res) => {
     const terms = await Dict.find();
     res.status(200).send({ terms });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -32,7 +32,7 @@ const getDictByTerm = async (req, res) => {
     const findTerm = await Dict.find({ term });
     res.status(200).send({ findTerm });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -42,7 +42,7 @@ const getDictByLetter = async (req, res) => {
     const findLetter = await Dict.find({ letter });
     res.status(200).send({ findLetter });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -52,7 +52,7 @@ const getOneDict = async (req, res) => {
     const term = await Dict.findById(id);
     res.status(200).send({ term });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -62,14 +62,14 @@ const updateDict = async (req, res) => {
     const { error, value } = dictValidation(req.body);
 
     if (error) {
-      return sendErrorResponse(res, error);
+      return sendErrorResponse(error, res);
     }
     const updateDict = await Dict.findByIdAndUpdate(id, value, {
       new: true,
     });
     res.status(200).send({ message: "Updated Dict", updateDict });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -79,7 +79,7 @@ const deleteDict = async (req, res) => {
     await Dict.findByIdAndDelete(id);
     res.status(200).send({ message: "Deleted Dict" });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 module.exports = {

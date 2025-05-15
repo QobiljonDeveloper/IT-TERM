@@ -7,13 +7,13 @@ const addTag = async (req, res) => {
     const { error, value } = tagValidation(req.body);
 
     if (error) {
-      return sendErrorResponse(res, error);
+      return sendErrorResponse(error, res);
     }
 
     const newTag = await Tag.create(value);
     res.status(201).send({ message: "New Tag added", newTag });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 

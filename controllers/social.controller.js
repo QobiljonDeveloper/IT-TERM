@@ -7,12 +7,12 @@ const addSocial = async (req, res) => {
     const { error, value } = socailValidation(req.body);
 
     if (error) {
-      return sendErrorResponse(res, error);
+      return sendErrorResponse(error, res);
     }
     const newSocial = await Social.create(value);
     res.status(201).send({ message: "New Social added", newSocial });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -21,7 +21,7 @@ const getAllSocails = async (req, res) => {
     const socials = await Social.find();
     res.status(200).send({ socials });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -31,7 +31,7 @@ const getOneSocial = async (req, res) => {
     const social = await Social.findById(id);
     res.status(200).send({ social });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -41,14 +41,14 @@ const updateSocial = async (req, res) => {
     const { error, value } = socailValidation(req.body);
 
     if (error) {
-      return sendErrorResponse(res, error);
+      return sendErrorResponse(error, res);
     }
     const newSocial = await Social.findByIdAndUpdate(id, value, {
       new: true,
     });
     res.status(201).send({ message: "New Social added", newSocial });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -58,7 +58,7 @@ const deleteSocial = async (req, res) => {
     await Social.findByIdAndDelete(id);
     res.status(200).send({ message: "Deleted Social" });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 module.exports = {

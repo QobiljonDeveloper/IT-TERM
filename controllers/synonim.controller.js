@@ -7,7 +7,7 @@ const addSynonim = async (req, res) => {
     const newSynonim = await Synonim.create({ desc_id, dict_id });
     res.status(201).send({ message: "New Synonim added", newSynonim });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 

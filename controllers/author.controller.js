@@ -6,12 +6,13 @@ const config = require("config");
 const bcrypt = require("bcrypt");
 const cookieParser = require("cookie-parser");
 const jwtService = require("../services/jwt.service");
+const { authorJwtService } = require("../services/jwt.service");
 
 const addAuthor = async (req, res) => {
   try {
     const { error, value } = authorValidation(req.body);
     if (error) {
-      return sendErrorResponse(res, error);
+      return sendErrorResponse(error, res);
     }
     const hashedPassword = bcrypt.hashSync(value.password, 7);
 
@@ -21,7 +22,7 @@ const addAuthor = async (req, res) => {
     });
     res.status(201).send({ message: "New Author added", newAuthor });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -30,7 +31,7 @@ const getAllAuthors = async (req, res) => {
     const authors = await Author.find();
     res.status(200).send({ authors });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -40,7 +41,7 @@ const getOneAuthor = async (req, res) => {
     const author = await Author.findById(id);
     res.status(200).send({ author });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -49,7 +50,7 @@ const updateAuthor = async (req, res) => {
   try {
     const { error, value } = authorValidation(req.body);
     if (error) {
-      return sendErrorResponse(res, error);
+      return sendErrorResponse(error, res);
     }
 
     const updatedAuthor = await Author.findByIdAndUpdate(id, value, {
@@ -57,7 +58,7 @@ const updateAuthor = async (req, res) => {
     });
     res.status(200).send({ message: "Updated Author", updatedAuthor });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -67,7 +68,7 @@ const deleteAuthor = async (req, res) => {
     await Author.findByIdAndDelete(id);
     res.status(200).send({ message: "Deleted Author" });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -105,13 +106,26 @@ const loginAuthor = async (req, res) => {
       maxAge: config.get("cookie_refresh_time"),
     });
 
+    // ---------------------TEST UCHUN ERROR--------------------------
+    setTimeout(function () {
+      try {
+        throw new Error("Caught inside setTimeout");
+      } catch (error) {
+        console.log("Xato ushlangan:", error.message);
+      }
+    }, 100);
+
+    new Promise((_, reject) => {
+      reject(new Error("UnhandledRejection example"));
+    });
+    // ---------------------TEST UCHUN ERROR--------------------------
     res.status(201).send({
       message: "Tizimga kirdingiz",
       id: author.id,
       accessToken: tokens.accessToken,
     });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -146,7 +160,53 @@ const logoutAuthor = async (req, res) => {
     res.clearCookie("refreshToken");
     res.send({ author });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
+  }
+};
+
+const refreshAuthorToken = async (req, res) => {
+  try {
+    const { refreshToken } = req.cookies;
+
+    if (!refreshToken) {
+      return res
+        .status(400)
+        .send({ message: "Cookieda refresh token topilmadi" });
+    }
+
+    await authorJwtService.verifyRefreshToken(refreshToken);
+
+    const author = await Author.findOne({ refresh_token: refreshToken });
+
+    if (!author) {
+      return res
+        .status(401)
+        .send({ message: "Bazada refresh token topilmadi" });
+    }
+
+    const payload = {
+      id: author._id,
+      email: author.email,
+      is_active: author.is_active,
+      is_expert: author.is_expert,
+    };
+
+    const tokens = authorJwtService.generateTokens(payload);
+    author.refresh_token = tokens.refreshToken;
+    await author.save();
+
+    res.cookie("refreshToken", tokens.refreshToken, {
+      httpOnly: true,
+      maxAge: config.get("cookie_refresh_time"),
+    });
+
+    res.status(201).send({
+      message: "Tokenlar yangilandi",
+      id: author.id,
+      accessToken: tokens.accessToken,
+    });
+  } catch (error) {
+    sendErrorResponse(error, res);
   }
 };
 
@@ -158,4 +218,5 @@ module.exports = {
   deleteAuthor,
   loginAuthor,
   logoutAuthor,
+  refreshAuthorToken,
 };

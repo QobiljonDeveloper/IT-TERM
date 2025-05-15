@@ -7,13 +7,13 @@ const addCategory = async (req, res) => {
     const { error, value } = categoryValidation(req.body);
 
     if (error) {
-      return sendErrorResponse(res, error);
+      return sendErrorResponse(error, res);
     }
     const { name, parent_category_id } = value;
     const newCategory = await Dict.create({ name, parent_category_id });
     res.status(201).send({ message: "New Category added", newCategory });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -22,7 +22,7 @@ const getAllCategory = async (req, res) => {
     const categories = await Category.find();
     res.status(200).send({ categories });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -32,7 +32,7 @@ const getCategoryByName = async (req, res) => {
     const findName = await Category.find({ name });
     res.status(200).send({ findName });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -42,7 +42,7 @@ const getOneCategory = async (req, res) => {
     const category = await Category.findById(id);
     res.status(200).send({ category });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -52,14 +52,14 @@ const updateCategory = async (req, res) => {
     const { error, value } = categoryValidation(req.body);
 
     if (error) {
-      return sendErrorResponse(res, error);
+      return sendErrorResponse(error, res);
     }
     const updateCategory = await Category.findByIdAndUpdate(id, value, {
       new: true,
     });
     res.status(200).send({ message: "Updated Category", updateCategory });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -69,7 +69,7 @@ const deleteCategory = async (req, res) => {
     await Category.findByIdAndDelete(id);
     res.status(200).send({ message: "Deleted Category" });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 module.exports = {

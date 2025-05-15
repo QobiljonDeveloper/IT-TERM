@@ -7,13 +7,13 @@ const addDescTopic = async (req, res) => {
     const { error, value } = descTopicValidation(req.body);
 
     if (error) {
-      return sendErrorResponse(res, error);
+      return sendErrorResponse(error, res);
     }
 
     const newDescTopic = await DescTopic.create(value);
     res.status(201).send({ message: "New Desc_Topic added", newDescTopic });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 

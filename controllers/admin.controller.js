@@ -9,14 +9,14 @@ const { adminJwtService } = require("../services/jwt.service");
 const addAdmin = async (req, res) => {
   try {
     const { error, value } = adminValidation(req.body);
-    if (error) return sendErrorResponse(res, error);
+    if (error) return sendErrorResponse(error, res);
 
     value.admin_password = await bcrypt.hash(value.admin_password, 10);
 
     const newAdmin = await Admin.create(value);
     res.status(201).send({ message: "New admin added", newAdmin });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -25,7 +25,7 @@ const getAllAdmins = async (req, res) => {
     const admins = await Admin.find();
     res.status(200).send({ admins });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -35,7 +35,7 @@ const getOneAdmin = async (req, res) => {
     const admin = await Admin.findById(id);
     res.status(200).send({ admin });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -43,14 +43,14 @@ const updateAdmin = async (req, res) => {
   const { id } = req.params;
   try {
     const { error, value } = adminValidation(req.body);
-    if (error) return sendErrorResponse(res, error);
+    if (error) return sendErrorResponse(error, res);
 
     const updatedAdmin = await Admin.findByIdAndUpdate(id, value, {
       new: true,
     });
     res.status(200).send({ message: "Updated admin", updatedAdmin });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -60,7 +60,7 @@ const deleteAdmin = async (req, res) => {
     await Admin.findByIdAndDelete(id);
     res.status(200).send({ message: "Deleted admin" });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -101,7 +101,7 @@ const loginAdmin = async (req, res) => {
       access_token: tokens.accessToken,
     });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -133,7 +133,7 @@ const logoutAdmin = async (req, res) => {
     res.clearCookie("admin_refresh_key");
     res.send({ admin });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 

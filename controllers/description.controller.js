@@ -9,13 +9,13 @@ const addDescription = async (req, res) => {
     const { error, value } = descriptionValidation(req.body);
 
     if (error) {
-      return sendErrorResponse(res, error);
+      return sendErrorResponse(error, res);
     }
     const { description } = value;
     const newDescription = await Description.create({ description });
     res.status(201).send({ message: "New Description added", newDescription });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -24,7 +24,7 @@ const getAllDescriptions = async (req, res) => {
     const descriptions = await Description.find().populate("category_id");
     res.status(200).send({ descriptions });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -34,7 +34,7 @@ const getOneDescription = async (req, res) => {
     const description = await Description.findById(id).populate("category_id");
     res.status(200).send({ description });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -44,7 +44,7 @@ const updateDescription = async (req, res) => {
     const { error, value } = descriptionValidation(req.body);
 
     if (error) {
-      return sendErrorResponse(res, error);
+      return sendErrorResponse(error, res);
     }
     const updatedDescription = await Description.findByIdAndUpdate(id, value, {
       new: true,
@@ -53,7 +53,7 @@ const updateDescription = async (req, res) => {
       .status(200)
       .send({ message: "Updated Description", updatedDescription });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -63,7 +63,7 @@ const deleteDescription = async (req, res) => {
     await Description.findByIdAndDelete(id);
     res.status(200).send({ message: "Deleted Description" });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 module.exports = {

@@ -9,14 +9,14 @@ const { userJwtService } = require("../services/jwt.service");
 const addUser = async (req, res) => {
   try {
     const { error, value } = userValidation(req.body);
-    if (error) return sendErrorResponse(res, error);
+    if (error) return sendErrorResponse(error, res);
 
     value.password = await bcrypt.hash(value.password, 10);
 
     const newUser = await User.create(value);
     res.status(201).send({ message: "New user added", newUser });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -25,7 +25,7 @@ const getAllUsers = async (req, res) => {
     const users = await User.find();
     res.status(200).send({ users });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -35,7 +35,7 @@ const getOneUser = async (req, res) => {
     const user = await User.findById(id);
     res.status(200).send({ user });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -43,14 +43,14 @@ const updateUser = async (req, res) => {
   const { id } = req.params;
   try {
     const { error, value } = userValidation(req.body);
-    if (error) return sendErrorResponse(res, error);
+    if (error) return sendErrorResponse(error, res);
 
     const updatedUser = await User.findByIdAndUpdate(id, value, {
       new: true,
     });
     res.status(200).send({ message: "Updated user", updatedUser });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -60,7 +60,7 @@ const deleteUser = async (req, res) => {
     await User.findByIdAndDelete(id);
     res.status(200).send({ message: "Deleted user" });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -93,7 +93,7 @@ const loginUser = async (req, res) => {
       access_token: tokens.accessToken,
     });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
@@ -125,7 +125,7 @@ const logoutUser = async (req, res) => {
     res.clearCookie("user_refresh_key");
     res.send({ user });
   } catch (error) {
-    sendErrorResponse(res, error);
+    sendErrorResponse(error, res);
   }
 };
 
