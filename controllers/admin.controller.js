@@ -4,6 +4,7 @@ const { sendErrorResponse } = require("../helpers/send_error_response");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const config = require("config");
+const { adminJwtService } = require("../services/jwt.service");
 
 const addAdmin = async (req, res) => {
   try {
@@ -85,19 +86,57 @@ const loginAdmin = async (req, res) => {
       admin_is_active: admin.admin_is_active,
     };
 
-    const token = jwt.sign(payload, config.get("tokenAdminKey"), {
-      expiresIn: config.get("tokenExpTime"),
+    const tokens = adminJwtService.generateTokens(payload);
+    admin.refresh_token = tokens.refreshToken;
+    await admin.save();
+
+    res.cookie("admin_refresh_key", tokens.refreshToken, {
+      httpOnly: true,
+      maxAge: config.get("cookie_refresh_time"),
     });
 
     res.status(200).send({
       message: "Admin muvaffaqiyatli tizimga kirdi",
       id: admin._id,
-      token,
+      access_token: tokens.accessToken,
     });
   } catch (error) {
     sendErrorResponse(res, error);
   }
 };
+
+const logoutAdmin = async (req, res) => {
+  try {
+    const { admin_refresh_key } = req.cookies;
+
+    if (!admin_refresh_key) {
+      return res
+        .status(400)
+        .send({ message: "Cookieda refresh token topilmadi" });
+    }
+
+    const admin = await Admin.findOneAndUpdate(
+      {
+        refresh_token: admin_refresh_key,
+      },
+      {
+        refresh_token: "",
+      },
+      {
+        new: true,
+      }
+    );
+    if (!admin) {
+      return res.status(400).send({ message: "Token noto'g'ri" });
+    }
+
+    res.clearCookie("admin_refresh_key");
+    res.send({ admin });
+  } catch (error) {
+    sendErrorResponse(res, error);
+  }
+};
+
 module.exports = {
   addAdmin,
   getAllAdmins,
@@ -105,4 +144,5 @@ module.exports = {
   updateAdmin,
   deleteAdmin,
   loginAdmin,
+  logoutAdmin,
 };

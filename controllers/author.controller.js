@@ -96,7 +96,7 @@ const loginAuthor = async (req, res) => {
     //   expiresIn: config.get("tokenExpTime"),
     // });
 
-    const tokens = jwtService.generateTokens(payload);
+    const tokens = jwtService.authorJwtService.generateTokens(payload);
     author.refresh_token = tokens.refreshToken;
     await author.save();
 

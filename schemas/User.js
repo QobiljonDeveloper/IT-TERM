@@ -24,6 +24,7 @@ const userSchema = new Schema(
       trim: true,
     },
     is_active: { type: Boolean, default: true },
+    refresh_token: { type: String },
   },
   { versionKey: false, timestamps: false }
 );

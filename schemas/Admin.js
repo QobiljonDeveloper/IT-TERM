@@ -8,6 +8,7 @@ const adminSchema = new mongoose.Schema(
     admin_password: { type: String, required: true },
     admin_is_active: { type: Boolean, default: true },
     admin_is_creator: { type: Boolean, default: false },
+    refresh_token: { type: String },
   },
   {
     timestamps: { createdAt: "created_date", updatedAt: "updated_date" },

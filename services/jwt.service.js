@@ -29,9 +29,29 @@ class JwtService {
   }
 }
 
-module.exports = new JwtService(
+const authorJwtService = new JwtService(
   config.get("access_key"),
   config.get("refresh_key"),
   config.get("access_time"),
   config.get("refresh_time")
 );
+
+const adminJwtService = new JwtService(
+  config.get("admin_access_key"),
+  config.get("admin_refresh_key"),
+  config.get("admin_access_time"),
+  config.get("refresh_time")
+);
+
+const userJwtService = new JwtService(
+  config.get("user_access_key"),
+  config.get("user_refresh_key"),
+  config.get("user_access_time"),
+  config.get("refresh_time")
+);
+
+module.exports = {
+  adminJwtService,
+  authorJwtService,
+  userJwtService,
+};

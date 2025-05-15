@@ -18,7 +18,7 @@ module.exports = (req, res, next) => {
       return res.status(401).send({ message: "Noto‘g‘ri token formati" });
     }
 
-    const decodedPayload = jwt.verify(token, config.get("tokenAdminKey"));
+    const decodedPayload = jwt.verify(token, config.get("admin_access_key"));
 
     if (!decodedPayload.admin_is_active) {
       return res.status(403).send({ message: "Aktiv bo'lmagan foydalanuvchi" });
