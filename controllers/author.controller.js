@@ -116,17 +116,17 @@ const loginAuthor = async (req, res) => {
     });
 
     // ---------------------TEST UCHUN ERROR--------------------------
-    setTimeout(function () {
-      try {
-        throw new Error("Caught inside setTimeout");
-      } catch (error) {
-        console.log("Xato ushlangan:", error.message);
-      }
-    }, 100);
+    // setTimeout(function () {
+    //   try {
+    //     throw new Error("Caught inside setTimeout");
+    //   } catch (error) {
+    //     console.log("Xato ushlangan:", error.message);
+    //   }
+    // }, 100);
 
-    new Promise((_, reject) => {
-      reject(new Error("UnhandledRejection example"));
-    });
+    // new Promise((_, reject) => {
+    //   reject(new Error("UnhandledRejection example"));
+    // });
     // ---------------------TEST UCHUN ERROR--------------------------
     res.status(201).send({
       message: "Tizimga kirdingiz",

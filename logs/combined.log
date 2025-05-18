@@ -1,0 +1,463 @@
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: "oddiy LOG ma'lumoti",
+  timestamp: '2025-05-16T10:48:34.222Z',
+  label: undefined
+}
+{
+  message: "Error LOG ma'lumoti",
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2025-05-16T10:48:34.226Z',
+  label: undefined
+}
+{
+  message: "Warn LOG ma'lumoti",
+  level: '\x1B[33mwarn\x1B[39m',
+  timestamp: '2025-05-16T10:48:34.227Z',
+  label: undefined
+}
+{
+  message: "Info LOG ma'lumoti",
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2025-05-16T10:48:34.228Z',
+  label: undefined
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: "oddiy LOG ma'lumoti",
+  timestamp: '2025-05-16T10:48:34.224Z',
+  label: undefined
+}
+{
+  message: "Error LOG ma'lumoti",
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2025-05-16T10:48:34.230Z',
+  label: undefined
+}
+{
+  message: "Warn LOG ma'lumoti",
+  level: '\x1B[33mwarn\x1B[39m',
+  timestamp: '2025-05-16T10:48:34.234Z',
+  label: undefined
+}
+{
+  message: "Info LOG ma'lumoti",
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2025-05-16T10:48:34.235Z',
+  label: undefined
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: "oddiy LOG ma'lumoti",
+  timestamp: '2025-05-16T10:48:40.513Z',
+  label: undefined
+}
+{
+  message: "Error LOG ma'lumoti",
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2025-05-16T10:48:40.515Z',
+  label: undefined
+}
+{
+  message: "Warn LOG ma'lumoti",
+  level: '\x1B[33mwarn\x1B[39m',
+  timestamp: '2025-05-16T10:48:40.516Z',
+  label: undefined
+}
+{
+  message: "Info LOG ma'lumoti",
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2025-05-16T10:48:40.517Z',
+  label: undefined
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: "oddiy LOG ma'lumoti",
+  timestamp: '2025-05-16T10:48:40.549Z',
+  label: undefined
+}
+{
+  message: "Error LOG ma'lumoti",
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2025-05-16T10:48:40.552Z',
+  label: undefined
+}
+{
+  message: "Warn LOG ma'lumoti",
+  level: '\x1B[33mwarn\x1B[39m',
+  timestamp: '2025-05-16T10:48:40.554Z',
+  label: undefined
+}
+{
+  message: "Info LOG ma'lumoti",
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2025-05-16T10:48:40.555Z',
+  label: undefined
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: "oddiy LOG ma'lumoti",
+  timestamp: '2025-05-16T10:49:51.906Z',
+  label: undefined
+}
+{
+  level: '\x1B[32minfo\x1B[39m',
+  message: "oddiy LOG ma'lumoti",
+  timestamp: '2025-05-16T10:49:51.906Z',
+  label: undefined
+}
+{
+  message: "Error LOG ma'lumoti",
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2025-05-16T10:49:51.909Z',
+  label: undefined
+}
+{
+  message: "Warn LOG ma'lumoti",
+  level: '\x1B[33mwarn\x1B[39m',
+  timestamp: '2025-05-16T10:49:51.911Z',
+  label: undefined
+}
+{
+  message: "Info LOG ma'lumoti",
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2025-05-16T10:49:51.912Z',
+  label: undefined
+}
+{
+  message: "Error LOG ma'lumoti",
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2025-05-16T10:49:51.909Z',
+  label: undefined
+}
+{
+  message: "Warn LOG ma'lumoti",
+  level: '\x1B[33mwarn\x1B[39m',
+  timestamp: '2025-05-16T10:49:51.910Z',
+  label: undefined
+}
+{
+  message: "Info LOG ma'lumoti",
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2025-05-16T10:49:51.910Z',
+  label: undefined
+}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:49:54.666Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:49:54.671Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:49:54.673Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:49:54.674Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:49:54.685Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:49:54.690Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:49:54.692Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:49:54.692Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:51:00.732Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:51:00.738Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:51:00.739Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:51:00.740Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:51:00.760Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:51:00.767Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:51:00.769Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:51:00.769Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:51:23.129Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:51:23.132Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:51:23.134Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:51:23.134Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:51:23.176Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:51:23.180Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:51:23.182Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:51:23.183Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:51:29.190Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:51:29.194Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:51:29.196Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:51:29.197Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:51:29.229Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:51:29.232Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:51:29.233Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:51:29.234Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:51:33.447Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:51:33.451Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:51:33.452Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:51:33.453Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:51:33.451Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:51:33.455Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:51:33.456Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:51:33.456Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:51:36.280Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:51:36.284Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:51:36.285Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:51:36.285Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:51:36.286Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:51:36.289Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:51:36.290Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:51:36.290Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:52:06.448Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:52:06.451Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:52:06.452Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:52:06.452Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:52:06.450Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:52:06.453Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:52:06.454Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:52:06.454Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:53:13.751Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:53:13.755Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:53:13.756Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:53:13.756Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:53:13.762Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:53:13.766Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:53:13.768Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:53:13.768Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:53:16.044Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:53:16.043Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:53:16.048Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:53:16.049Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:53:16.049Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:53:16.046Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:53:16.047Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:53:16.047Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:53:50.559Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:53:50.562Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:53:50.563Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:53:50.563Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:53:50.589Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:53:50.592Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:53:50.593Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:53:50.593Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:53:55.809Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:53:55.814Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:53:55.816Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:53:55.816Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:53:55.807Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:53:55.812Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:53:55.814Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:53:55.814Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:56:17.657Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:56:17.662Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:56:17.664Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:56:17.664Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:56:17.669Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:56:17.672Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:56:17.673Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:56:17.674Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:56:18.848Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:56:18.851Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:56:18.852Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:56:18.852Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:56:18.912Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:56:18.916Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:56:18.917Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:56:18.917Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:56:22.241Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:56:22.243Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:56:22.244Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:56:22.245Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:56:22.264Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:56:22.270Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:56:22.272Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:56:22.273Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:56:27.264Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:56:27.263Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:56:27.267Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:56:27.268Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:56:27.268Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:56:27.267Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:56:27.268Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:56:27.268Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:56:51.427Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:56:51.431Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:56:51.432Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:56:51.433Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:56:51.433Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:56:51.442Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:56:51.443Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:56:51.444Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:57:12.704Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:57:12.708Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:57:12.709Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:57:12.709Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:57:44.104Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:57:44.108Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:57:44.109Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:57:44.110Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:57:44.125Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:57:44.128Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:57:44.130Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:57:44.130Z"}
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [32minfo[39m: oddiy LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [31merror[39m: Error LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [33mwarn[39m: Warn LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [32minfo[39m: Info LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [32minfo[39m: oddiy LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [31merror[39m: Error LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [33mwarn[39m: Warn LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [32minfo[39m: Info LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [32minfo[39m: oddiy LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [31merror[39m: Error LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [33mwarn[39m: Warn LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [32minfo[39m: Info LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [32minfo[39m: oddiy LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [31merror[39m: Error LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [33mwarn[39m: Warn LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [32minfo[39m: Info LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [32minfo[39m: oddiy LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [31merror[39m: Error LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [33mwarn[39m: Warn LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [32minfo[39m: Info LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [32minfo[39m: oddiy LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [31merror[39m: Error LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [33mwarn[39m: Warn LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [32minfo[39m: Info LOG ma'lumoti
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:59:25.192Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:25.196Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:59:25.197Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:59:25.197Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:59:25.207Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:25.210Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:59:25.211Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:59:25.211Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:59:32.348Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:32.351Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:59:32.351Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:59:32.352Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:59:32.355Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:32.358Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:59:32.359Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:59:32.360Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:59:34.585Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:59:34.590Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:34.590Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:59:34.591Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:59:34.592Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:34.594Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:59:34.595Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:59:34.595Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:59:35.768Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:59:35.766Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:35.770Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:59:35.772Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:59:35.772Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:35.769Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:59:35.769Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:59:35.770Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:59:55.992Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:55.996Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:59:55.998Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:59:55.998Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:59:55.992Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:55.997Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:59:55.997Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:59:55.998Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:59:57.365Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:57.367Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:59:57.368Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:59:57.368Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T10:59:57.371Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:57.375Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T10:59:57.375Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T10:59:57.375Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T11:00:01.839Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:00:01.844Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T11:00:01.846Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T11:00:01.846Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T11:00:01.850Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:00:01.855Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T11:00:01.856Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T11:00:01.856Z"}
+{"body":"{\r\n    \"email\": \"qyuldashev263@gmail.com\"\r\n    \"password\": \"qobiljon2009\"\r\n}","expose":true,"label":"ITTERM","level":"\u001b[31merror\u001b[39m","status":400,"statusCode":400,"timestamp":"2025-05-16T11:00:02.029Z","type":"entity.parse.failed"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T11:00:42.379Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:00:42.384Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T11:00:42.386Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T11:00:42.386Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T11:01:51.882Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:01:51.885Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T11:01:51.886Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T11:01:51.886Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T11:01:51.883Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:01:51.886Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T11:01:51.887Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T11:01:51.888Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T11:03:11.407Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:03:11.410Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T11:03:11.411Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T11:03:11.411Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T11:03:11.457Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:03:11.461Z"}
+{"label":"ITTERM","level":"\u001b[33mwarn\u001b[39m","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T11:03:11.462Z"}
+{"label":"ITTERM","level":"\u001b[32minfo\u001b[39m","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T11:03:11.462Z"}
+{"label":"ITTERM","level":"info","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T11:07:00.837Z"}
+{"label":"ITTERM","level":"error","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:07:00.840Z"}
+{"label":"ITTERM","level":"warn","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T11:07:00.841Z"}
+{"label":"ITTERM","level":"info","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T11:07:00.841Z"}
+{"label":"ITTERM","level":"info","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T11:07:00.859Z"}
+{"label":"ITTERM","level":"error","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:07:00.863Z"}
+{"label":"ITTERM","level":"warn","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T11:07:00.864Z"}
+{"label":"ITTERM","level":"info","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T11:07:00.864Z"}
+{"label":"ITTERM","level":"info","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T11:07:01.905Z"}
+{"label":"ITTERM","level":"error","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:07:01.907Z"}
+{"label":"ITTERM","level":"warn","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T11:07:01.908Z"}
+{"label":"ITTERM","level":"info","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T11:07:01.908Z"}
+{"label":"ITTERM","level":"info","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T11:11:05.170Z"}
+{"label":"ITTERM","level":"error","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:11:05.172Z"}
+{"label":"ITTERM","level":"warn","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T11:11:05.173Z"}
+{"label":"ITTERM","level":"info","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T11:11:05.174Z"}
+{"label":"ITTERM","level":"info","message":"oddiy LOG ma'lumoti","timestamp":"2025-05-16T11:11:06.293Z"}
+{"label":"ITTERM","level":"error","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:11:06.295Z"}
+{"label":"ITTERM","level":"warn","message":"Warn LOG ma'lumoti","timestamp":"2025-05-16T11:11:06.296Z"}
+{"label":"ITTERM","level":"info","message":"Info LOG ma'lumoti","timestamp":"2025-05-16T11:11:06.297Z"}
+{"date":"Fri May 16 2025 16:14:45 GMT+0500 (Uzbekistan Standard Time)","error":{},"label":"ITTERM","level":"error","message":"unhandledRejection: UnhandledRejection example\nError: UnhandledRejection example\n    at C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\controllers\\author.controller.js:128:14\n    at new Promise (<anonymous>)\n    at loginAuthor (C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\controllers\\author.controller.js:127:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","os":{"loadavg":[0,0,0],"uptime":6770.562},"process":{"argv":["C:\\nvm4w\\nodejs\\node.exe","C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\app"],"cwd":"C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM","execPath":"C:\\nvm4w\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18288098,"external":20722476,"heapTotal":32645120,"heapUsed":28453400,"rss":73879552},"pid":21480,"uid":null,"version":"v22.14.0"},"rejection":true,"stack":"Error: UnhandledRejection example\n    at C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\controllers\\author.controller.js:128:14\n    at new Promise (<anonymous>)\n    at loginAuthor (C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\controllers\\author.controller.js:127:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-05-16T11:14:45.574Z","trace":[{"column":14,"file":"C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\controllers\\author.controller.js","function":null,"line":128,"method":null,"native":false},{"column":null,"file":null,"function":"new Promise","line":null,"method":null,"native":false},{"column":5,"file":"C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\controllers\\author.controller.js","function":"loginAuthor","line":127,"method":null,"native":false},{"column":5,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":105,"method":"processTicksAndRejections","native":false}]}
+{"body":"{\r\n    \"email\": \"qyuldashev263@gmail.com\"\r\n    \"password\": \"qobiljon2009\"\r\n}","expose":true,"label":"ITTERM","level":"error","status":400,"statusCode":400,"timestamp":"2025-05-16T11:21:25.413Z","type":"entity.parse.failed"}
+{"body":"{\r\n    \"email\": \"qyuldashev263@gmail.com\"\r\n    \"password\": \"qobiljon2009\"\r\n}","expose":true,"label":"ITTERM","level":"error","status":400,"statusCode":400,"timestamp":"2025-05-16T11:32:33.156Z","type":"entity.parse.failed"}
+{"body":"{\r\n    \"email\": \"qyuldashev263@gmail.com\"\r\n    \"password\": \"qobiljon2009\"\r\n}","expose":true,"label":"ITTERM","level":"error","status":400,"statusCode":400,"timestamp":"2025-05-16T11:36:22.778Z","type":"entity.parse.failed"}
+{"label":"ITTERM","level":"error","timestamp":"2025-05-18T04:51:53.853Z"}
+{"label":"ITTERM","level":"error","timestamp":"2025-05-18T04:52:05.703Z"}
+{"label":"ITTERM","level":"error","timestamp":"2025-05-18T04:52:10.446Z"}
+{"body":"{\r\n    \"email\": \"qobiljonyuldashev612@gmail.com\",\r\n    \"password\": \"sardor2009\",\r\n}","expose":true,"label":"ITTERM","level":"error","status":400,"statusCode":400,"timestamp":"2025-05-18T04:53:32.650Z","type":"entity.parse.failed"}
+{"body":"{\r\n    \"author_id\": \"682968096b21d7feb0342bea\",\r\n    \"social_id\": \"68296e5f259e2bcc03d15060\",\r\n}","expose":true,"label":"ITTERM","level":"error","status":400,"statusCode":400,"timestamp":"2025-05-18T05:28:09.123Z","type":"entity.parse.failed"}
+{"body":"{\r\n    \"author_id\": \"682968096b21d7feb0342bea\",\r\n    \"social_id\": \"68296e5f259e2bcc03d15060\",\r\n}","expose":true,"label":"ITTERM","level":"error","status":400,"statusCode":400,"timestamp":"2025-05-18T05:28:14.751Z","type":"entity.parse.failed"}

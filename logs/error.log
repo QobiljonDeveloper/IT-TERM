@@ -1,0 +1,55 @@
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:57:44.108Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:57:44.128Z"}
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [31merror[39m: Error LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [31merror[39m: Error LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [31merror[39m: Error LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [31merror[39m: Error LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [31merror[39m: Error LOG ma'lumoti
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [ITTERM] [31merror[39m: Error LOG ma'lumoti
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:25.196Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:25.210Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:32.351Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:32.358Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:34.590Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:34.594Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:35.770Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:35.769Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:55.996Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:55.997Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:57.367Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T10:59:57.375Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:00:01.844Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:00:01.855Z"}
+{"body":"{\r\n    \"email\": \"qyuldashev263@gmail.com\"\r\n    \"password\": \"qobiljon2009\"\r\n}","expose":true,"label":"ITTERM","level":"\u001b[31merror\u001b[39m","status":400,"statusCode":400,"timestamp":"2025-05-16T11:00:02.029Z","type":"entity.parse.failed"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:00:42.384Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:01:51.885Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:01:51.886Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:03:11.410Z"}
+{"label":"ITTERM","level":"\u001b[31merror\u001b[39m","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:03:11.461Z"}
+{"label":"ITTERM","level":"error","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:07:00.840Z"}
+{"label":"ITTERM","level":"error","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:07:00.863Z"}
+{"label":"ITTERM","level":"error","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:07:01.907Z"}
+{"label":"ITTERM","level":"error","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:11:05.172Z"}
+{"label":"ITTERM","level":"error","message":"Error LOG ma'lumoti","timestamp":"2025-05-16T11:11:06.295Z"}
+{"date":"Fri May 16 2025 16:14:45 GMT+0500 (Uzbekistan Standard Time)","error":{},"label":"ITTERM","level":"error","message":"unhandledRejection: UnhandledRejection example\nError: UnhandledRejection example\n    at C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\controllers\\author.controller.js:128:14\n    at new Promise (<anonymous>)\n    at loginAuthor (C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\controllers\\author.controller.js:127:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","os":{"loadavg":[0,0,0],"uptime":6770.562},"process":{"argv":["C:\\nvm4w\\nodejs\\node.exe","C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\app"],"cwd":"C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM","execPath":"C:\\nvm4w\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18288098,"external":20722476,"heapTotal":32645120,"heapUsed":28453400,"rss":73879552},"pid":21480,"uid":null,"version":"v22.14.0"},"rejection":true,"stack":"Error: UnhandledRejection example\n    at C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\controllers\\author.controller.js:128:14\n    at new Promise (<anonymous>)\n    at loginAuthor (C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\controllers\\author.controller.js:127:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-05-16T11:14:45.574Z","trace":[{"column":14,"file":"C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\controllers\\author.controller.js","function":null,"line":128,"method":null,"native":false},{"column":null,"file":null,"function":"new Promise","line":null,"method":null,"native":false},{"column":5,"file":"C:\\Users\\asus\\Desktop\\FullStack-21\\DATABASE\\ITTERM\\controllers\\author.controller.js","function":"loginAuthor","line":127,"method":null,"native":false},{"column":5,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":105,"method":"processTicksAndRejections","native":false}]}
+{"body":"{\r\n    \"email\": \"qyuldashev263@gmail.com\"\r\n    \"password\": \"qobiljon2009\"\r\n}","expose":true,"label":"ITTERM","level":"error","status":400,"statusCode":400,"timestamp":"2025-05-16T11:21:25.413Z","type":"entity.parse.failed"}
+{"body":"{\r\n    \"email\": \"qyuldashev263@gmail.com\"\r\n    \"password\": \"qobiljon2009\"\r\n}","expose":true,"label":"ITTERM","level":"error","status":400,"statusCode":400,"timestamp":"2025-05-16T11:32:33.156Z","type":"entity.parse.failed"}
+{"body":"{\r\n    \"email\": \"qyuldashev263@gmail.com\"\r\n    \"password\": \"qobiljon2009\"\r\n}","expose":true,"label":"ITTERM","level":"error","status":400,"statusCode":400,"timestamp":"2025-05-16T11:36:22.778Z","type":"entity.parse.failed"}
+{"label":"ITTERM","level":"error","timestamp":"2025-05-18T04:51:53.853Z"}
+{"label":"ITTERM","level":"error","timestamp":"2025-05-18T04:52:05.703Z"}
+{"label":"ITTERM","level":"error","timestamp":"2025-05-18T04:52:10.446Z"}
+{"body":"{\r\n    \"email\": \"qobiljonyuldashev612@gmail.com\",\r\n    \"password\": \"sardor2009\",\r\n}","expose":true,"label":"ITTERM","level":"error","status":400,"statusCode":400,"timestamp":"2025-05-18T04:53:32.650Z","type":"entity.parse.failed"}
+{"body":"{\r\n    \"author_id\": \"682968096b21d7feb0342bea\",\r\n    \"social_id\": \"68296e5f259e2bcc03d15060\",\r\n}","expose":true,"label":"ITTERM","level":"error","status":400,"statusCode":400,"timestamp":"2025-05-18T05:28:09.123Z","type":"entity.parse.failed"}
+{"body":"{\r\n    \"author_id\": \"682968096b21d7feb0342bea\",\r\n    \"social_id\": \"68296e5f259e2bcc03d15060\",\r\n}","expose":true,"label":"ITTERM","level":"error","status":400,"statusCode":400,"timestamp":"2025-05-18T05:28:14.751Z","type":"entity.parse.failed"}

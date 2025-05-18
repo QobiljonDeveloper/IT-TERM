@@ -10,7 +10,7 @@ const addCategory = async (req, res) => {
       return sendErrorResponse(error, res);
     }
     const { name, parent_category_id } = value;
-    const newCategory = await Dict.create({ name, parent_category_id });
+    const newCategory = await Category.create({ name, parent_category_id });
     res.status(201).send({ message: "New Category added", newCategory });
   } catch (error) {
     sendErrorResponse(error, res);

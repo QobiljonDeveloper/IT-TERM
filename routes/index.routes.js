@@ -10,6 +10,9 @@ const descTopicRouter = require("./desTopic.routes");
 const tagRouter = require("./tag.routes");
 const userRouter = require("./user.routes");
 const adminRouter = require("./admin.routes");
+const qaRouter = require("./question_answer.routes");
+const descQA = require("./des_qa.routes");
+const authorSocialRouter = require("./author_social.routes");
 
 router.use("/dict", dictRouter);
 router.use("/category", categoryRouter);
@@ -22,5 +25,7 @@ router.use("/desc-topic", descTopicRouter);
 router.use("/tag", tagRouter);
 router.use("/user", userRouter);
 router.use("/admin", adminRouter);
-
+router.use("/qa", qaRouter);
+router.use("/desc_qa", descQA);
+router.use("/author_social", authorSocialRouter);
 module.exports = router;
