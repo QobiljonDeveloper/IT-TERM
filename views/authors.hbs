@@ -1,1 +1,30 @@
-<h3>Muallif sahifa</h3>
+<h1 style="text-align: center;">{{title}}</h1>
+
+<div
+  class="container"
+  style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px;"
+>
+  {{#each authors}}
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <img
+          src="https://pedsovet.org/v3/upload/ckeditor/79/images/2025-01-13/1736768085_photo_2024-12-18_09-09-22%20(2).jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>To'liq ismi:</strong>
+            {{first_name}}
+            {{last_name}}</li>
+          <li class="list-group-item"><strong>Taxallusi:</strong>
+            {{nick_name}}</li>
+          <li class="list-group-item"><strong>Ma'lumot:</strong> {{info}}</li>
+          <li class="list-group-item"><strong>Lavozim:</strong>
+            {{position}}</li>
+          <li class="list-group-item"><strong>Telefon:</strong> {{phone}}</li>
+        </ul>
+
+      </div>
+    </div>
+  {{/each}}
+</div>
