@@ -1,55 +1,34 @@
 const express = require("express");
 const config = require("config");
-const mongoose = require("mongoose");
+const mongoose = require("mongoose"); // ODM
 const cookieParser = require("cookie-parser");
 
-const indexRouter = require("./routes/index.routes.js");
-const errorHandlingMiddleware = require("./middlewares/errors/error.handling.middleware.js");
-const logger = require("./services/logger.service.js");
-const requestLogger = require("./middlewares/loggers/request.logger.js");
-const requestErrorLogger = require("./middlewares/loggers/request.error.logger.js");
-const PORT = config.get("port") || 3030;
+const exHbs = require("express-handlebars");
 
-//const
-const winston = require("winston");
-const expressWinston = require("express-winston");
+const indexRouter = require("./routes/index.routes.js");
+const viewRouter = require("./routes/views.routes.js");
+const errorHandlingMiddleware = require("./middlewares/errors/error.handling.middleware.js");
+const PORT = config.get("port") || 3030;
 
 require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` });
 
-// console.log(process.env.NODE_ENV);
-// console.log(process.env.secret_token);
-// console.log(config.get("secret_token"));
-
-// logger.log("info", "oddiy LOG ma'lumoti");
-// logger.error("Error LOG ma'lumoti");
-// logger.debug("Debug LOG ma'lumoti");
-// logger.warn("Warn LOG ma'lumoti");
-// logger.info("Info LOG ma'lumoti");
-// console.trace("Trace LOG ma'lumoti");
-// console.table(["JS", "Python", "Java"]);
-// console.table([
-//   ["Karim", 5],
-//   ["Vali", 2],
-//   ["Ali", 3],
-// ]);
-
-process.on("uncaughtException", (exception) => {
-  console.log("uncaughtException:", exception.message);
-});
-
-process.on("unhandledRejection", (rejection) => {
-  console.log("unhandledRejection:", rejection);
-});
-
 const app = express();
-app.use(express.json());
+app.use(express.json()); // parse qilib beradi jsondan obj ga
 app.use(cookieParser());
-app.use(requestLogger);
 
-app.use("/api", indexRouter);
+const  hbs = exHbs.create({
+    defaultLayout: "main",
+    extname: "hbs",
+})
 
-app.use(requestErrorLogger);
+app.engine("hbs", hbs.engine);
+app.set("view engine", "hbs");
+app.set("views", "./views");
 
+app.use(express.static("views"));
+
+app.use("/", viewRouter);// FRONTEND
+app.use("/api", indexRouter);// BACKEND
 app.use(errorHandlingMiddleware); // error handling eng oxiridda yozilishi kerak
 async function start() {
   try {

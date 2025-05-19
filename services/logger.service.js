@@ -36,3 +36,4 @@ logger.exitOnError = false;
 logger.rejections = false;
 
 module.exports = logger;
+

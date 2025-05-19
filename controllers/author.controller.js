@@ -128,7 +128,7 @@ const loginAuthor = async (req, res) => {
     //   reject(new Error("UnhandledRejection example"));
     // });
     // ---------------------TEST UCHUN ERROR--------------------------
-    res.status(201).send({
+    res.status(200).send({
       message: "Tizimga kirdingiz",
       id: author.id,
       accessToken: tokens.accessToken,
