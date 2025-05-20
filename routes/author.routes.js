@@ -18,7 +18,7 @@ router.post("/", addAuthor);
 router.post("/login", loginAuthor);
 router.post("/logout", logoutAuthor);
 router.post("/refresh", refreshAuthorToken);
-router.get("/", getAllAuthors);
+router.get("/", authorJwtGuard, getAllAuthors);
 router.get("/activate/:link", authorActivate);
 router.patch("/:id", updateAuthor);
 router.delete("/:id", deleteAuthor);

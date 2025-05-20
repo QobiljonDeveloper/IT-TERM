@@ -22,7 +22,6 @@ module.exports = async (req, res, next) => {
     if (!decodedPayload.is_active) {
       return res.status(403).send({ message: "Aktiv bo'lmagan foydalanuvchi" });
     }
-
     req.author = decodedPayload;
     next();
   } catch (error) {

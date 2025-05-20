@@ -7,7 +7,7 @@
   "access_key": "AccessTokenSecretKey",
   "refresh_key": "RefreshTokenSecretKey",
   "access_time": "15h",
-  "refresh_time": "15d",
+  "refresh_time": "30h",
 
   "admin_access_key": "AdminAccessSecret",
   "admin_refresh_key": "AdminRefreshSecret",
