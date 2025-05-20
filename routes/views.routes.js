@@ -22,21 +22,19 @@ router.get("/dictionary", async (req, res) => {
 });
 
 router.get("/authors", async (req, res) => {
-  let authors = await authorsModel.find().lean();
+  // let authors = await authorsModel.find().lean();
   console.log(authors);
   res.render(createViewPage("authors"), {
     title: "Mualliflar sahifa",
     isAuthors: true,
-    authors,
   });
 });
 
 router.get("/topics", async (req, res) => {
-  let topics = await topicsModel.find().lean();
+  // let topics = await topicsModel.find().lean();
   res.render(createViewPage("topics"), {
     isTopics: true,
     title: "Mavzular sahifasi",
-    topics,
   });
 });
 
