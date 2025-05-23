@@ -1,6 +1,6 @@
 {
   "port": 3333,
-  "dbUri": "mongodb://localhost:27017/itterm",
+  "dbUri": "mongodb+srv://admin:admin12345@cluster0.v4ad6.mongodb.net/itterm?retryWrites=true&w=majority&appName=Cluster0",
   "tokenKey": "MySecretTokenKey",
   "tokenExpTime": "24h",
 
